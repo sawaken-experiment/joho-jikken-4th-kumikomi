@@ -1,0 +1,65 @@
+##############################################################################
+# UCF file for MieruEMB System Board V1.1  2011-09-24    ArchLab. TOKYO TECH #
+##############################################################################
+#### SYSTEM ##################################################################
+NET CLK        LOC="P36" | PERIOD=40 MHz ; # 
+NET ULED<0>    LOC="P32" ;                 # D2 (Light Emitting Diode 2)
+NET ULED<1>    LOC="P33" ;                 # D3 (Light Emitting Diode 3)
+NET ULED<2>    LOC="P34" ;                 # D4 (Light Emitting Diode 4)
+NET SW<0>      LOC="P68" ;                 # SW1 (Switch 1)
+NET SW<1>      LOC="P70" ;                 # SW2 (Switch 2)
+NET SW<2>      LOC="P71" ;                 # SW3 (Switch 3)
+NET GPIO<0>    LOC="P40" ;                 # General Purpose I/O
+NET GPIO<1>    LOC="P35" ;                 # General Purpose I/O / ULED[3]
+NET GPI        LOC="P38" ;                 # General Purpose Input
+#### On board SRAM ###########################################################
+NET SRAM_A<0>  LOC="P10" ;                 #
+NET SRAM_A<1>  LOC="P9"  ;                 #
+NET SRAM_A<2>  LOC="P5"  ;                 #
+NET SRAM_A<3>  LOC="P4"  ;                 #
+NET SRAM_A<4>  LOC="P3"  ;                 #
+NET SRAM_A<5>  LOC="P91" ;                 #
+NET SRAM_A<6>  LOC="P90" ;                 #
+NET SRAM_A<7>  LOC="P86" ;                 #
+NET SRAM_A<8>  LOC="P85" ;                 #
+NET SRAM_A<9>  LOC="P84" ;                 #
+NET SRAM_A<10> LOC="P78" ;                 #
+NET SRAM_A<11> LOC="P79" ;                 #
+NET SRAM_A<12> LOC="P83" ;                 #
+NET SRAM_A<13> LOC="P11" ;                 #
+NET SRAM_A<14> LOC="P12" ;                 #
+NET SRAM_A<15> LOC="P23" ;                 #
+NET SRAM_A<16> LOC="P27" ;                 #
+NET SRAM_A<17> LOC="P26" ;                 #
+NET SRAM_A<18> LOC="P24" ;                 #
+NET SRAM_D<0>  LOC="P2"  | PULLDOWN ;      #
+NET SRAM_D<1>  LOC="P98" | PULLDOWN ;      #
+NET SRAM_D<2>  LOC="P95" | PULLDOWN ;      #
+NET SRAM_D<3>  LOC="P94" | PULLDOWN ;      #
+NET SRAM_D<4>  LOC="P15" | PULLDOWN ;      #
+NET SRAM_D<5>  LOC="P16" | PULLDOWN ;      #
+NET SRAM_D<6>  LOC="P17" | PULLDOWN ;      #
+NET SRAM_D<7>  LOC="P18" | PULLDOWN ;      #
+NET SRAM_OE_X  LOC="P22" ;                 #
+NET SRAM_WE_X  LOC="P92" ;                 #
+##############################################################################
+NET LCD        LOC="P67" ;                 # P1
+#### MultiMediaCard ##########################################################
+NET MMC_CS_X   LOC="P41" ;                 #
+NET MMC_DIN    LOC="P42" ;                 #
+NET MMC_SCLK   LOC="P43" ;                 #
+NET MMC_DOUT   LOC="P47" | PULLUP ;        #
+#### Mini-LCD (Liquid Crystal Display) #######################################
+NET LCD_CS0    LOC="P48" ;                 #
+NET LCD_CD     LOC="P49" ;                 #
+NET LCD_WR     LOC="P53" ;                 #
+NET LCD_RSTB   LOC="P54" ;                 #
+NET LCD_D<0>   LOC="P57" ;                 #
+NET LCD_D<1>   LOC="P58" ;                 #
+NET LCD_D<2>   LOC="P60" ;                 #
+NET LCD_D<3>   LOC="P61" ;                 #
+NET LCD_D<4>   LOC="P62" ;                 #
+NET LCD_D<5>   LOC="P63" ;                 #
+NET LCD_D<6>   LOC="P65" ;                 #
+NET LCD_D<7>   LOC="P66" ;                 #
+##############################################################################

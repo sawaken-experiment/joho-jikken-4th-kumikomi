@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;../rtl/clock.v&quot; line 32 </arg>Connection to input port &apos;<arg fmt="%s" index="2">DSSEN</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;../rtl/clock.v&quot; line 32 </arg>Connection to input port &apos;<arg fmt="%s" index="2">PSCLK</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;../rtl/clock.v&quot; line 32 </arg>Connection to input port &apos;<arg fmt="%s" index="2">PSEN</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;../rtl/clock.v&quot; line 32 </arg>Connection to input port &apos;<arg fmt="%s" index="2">PSINCDEC</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;../rtl/clock.v&quot; line 32 </arg>Connection to input port &apos;<arg fmt="%s" index="2">RST</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="260" delta="new" ><arg fmt="%s" index="1">&quot;../rtl/MieruEMB.v&quot; line 51 </arg>Connection to inout port &apos;<arg fmt="%s" index="2">GPIO</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;../rtl/minilcd.v&quot; line 31 </arg>Connection to output port &apos;<arg fmt="%s" index="2">DOUT</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">../rtl/MieruEMB.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">KEY_CLK</arg>&apos; of instance &apos;<arg fmt="%s" index="4">iocon</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">../rtl/MieruEMB.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">KEY_IN</arg>&apos; of instance &apos;<arg fmt="%s" index="4">iocon</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="new" >&quot;<arg fmt="%s" index="1">../rtl/iocon.v</arg>&quot; line <arg fmt="%d" index="2">114</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;GPI&gt;, &lt;SW&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">VRAM_DATA&lt;7:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">D&lt;7:3&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">KEY_IN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">KEY_CLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">vk_on</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">vk_off</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_val</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_txd</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_rdy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">kbcon_ack</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpc</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gpiocon</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpd</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gpiocon</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpe</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gpiocon</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpf</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gpiocon</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_12&gt; &lt;inst_rd_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_13&gt; &lt;inst_rd_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_14&gt; &lt;inst_rd_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_15&gt; &lt;inst_rd_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_6&gt; &lt;inst_shamt_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_7&gt; &lt;inst_shamt_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_8&gt; &lt;inst_shamt_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_9&gt; &lt;inst_shamt_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_10&gt; &lt;inst_shamt_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">core</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_11&gt; &lt;inst_rd_0&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">lcd_reg</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MieruEMB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DOUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vram</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3040" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_r</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3040" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3044" delta="new" >The ROM &lt;<arg fmt="%s" index="1">Mrom_DATA_mux0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">DATA</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3039" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mrom_DATA_mux0000</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
+<msg type="info" file="Xst" num="3040" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3040" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_12&gt; &lt;inst_rd_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_13&gt; &lt;inst_rd_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_14&gt; &lt;inst_rd_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_15&gt; &lt;inst_rd_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_rt_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_6&gt; &lt;inst_shamt_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_7&gt; &lt;inst_shamt_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_8&gt; &lt;inst_shamt_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_9&gt; &lt;inst_shamt_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_10&gt; &lt;inst_shamt_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_addr_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_imm_11&gt; &lt;inst_rd_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_rrs_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;du/sign_a&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_rrt_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;du/sign_b&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vram/Mram_mem4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">minilcd_con</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpf/mode</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpf/out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpe/mode</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpe/out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpd/mode</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpd/out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpc/mode</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">iocon/gpiocon/gpc/out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_attr_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_op_65&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_attr_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_op_69&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_attr_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_op_70&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_attr_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_op_72&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_attr_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_op_55&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_attr_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_op_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_attr_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPSCORE</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_op_56&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SRAM_A_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;iocon/gpiocon/gp_ain_0&gt; &lt;iocon/byte_select_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SRAM_A_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;iocon/gpiocon/gp_ain_1&gt; &lt;iocon/byte_select_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SRAM_A_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;iocon/gpiocon/gp_ain_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SRAM_A_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;iocon/gpiocon/gp_ain_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">D_KEEP_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MieruEMB</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;iocon/gpiocon/gp_din&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">MieruEMB</arg>: <arg fmt="%d" index="2">10</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+</messages>
+

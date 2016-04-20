@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map M.81d on Tue Oct 22 10:39:55 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SW<1>" LOCATE = SITE "P70" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "P71" LEVEL 1;
+COMP "ULED<0>" LOCATE = SITE "P32" LEVEL 1;
+COMP "ULED<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "ULED<2>" LOCATE = SITE "P34" LEVEL 1;
+COMP "ULED<3>" LOCATE = SITE "P35" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P36" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "P68" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

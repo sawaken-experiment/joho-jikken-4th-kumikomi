@@ -1,0 +1,6 @@
+MO MieruEMB NULL ../rtl/MieruEmb.v vlg16/_mieru_e_m_b.bin 1382406120
+MO minilcd_con NULL ../rtl/minilcd.v vlg2B/minilcd__con.bin 1382406120
+MO clockgen NULL ../rtl/MieruEmb.v vlg16/clockgen.bin 1382406120
+MO minilcd_initmem NULL ../rtl/minilcd.v vlg76/minilcd__initmem.bin 1382406120
+MO minilcd_vram NULL ../rtl/minilcd.v vlg15/minilcd__vram.bin 1382406120
+MO resetgen NULL ../rtl/MieruEmb.v vlg15/resetgen.bin 1382406120

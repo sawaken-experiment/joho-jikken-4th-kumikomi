@@ -1,0 +1,2 @@
+verilog work "../rtl/minilcd.v"
+verilog work "../rtl/MieruEmb.v"

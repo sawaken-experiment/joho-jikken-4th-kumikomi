@@ -1,0 +1,26 @@
+##############################################################################
+# UCF file for MieruEMB System Board V1.1  2011-09-13    ArchLab. TOKYO TECH #
+##############################################################################
+#### SYSTEM ##################################################################
+NET CLK        LOC="P36" | PERIOD=40 MHz ; #
+NET ULED<0>    LOC="P32" ;                 # D2 (Light Emitting Diode 2)
+NET ULED<1>    LOC="P33" ;                 # D3 (Light Emitting Diode 2)
+NET ULED<2>    LOC="P34" ;                 # D4 (Light Emitting Diode 2)
+NET ULED<3>    LOC="P35" ;                 # D5 (Light Emitting Diode 2)
+NET SW<0>      LOC="P68" ;                 # SW1 (Switch 1)
+NET SW<1>      LOC="P70" ;                 # SW2 (Switch 2)
+NET SW<2>      LOC="P71" ;                 # SW3 (Switch 3)
+#### Mini-LCD (Liquid Crystal Display) #######################################
+NET LCD_CS0    LOC="P48" ;                 #
+NET LCD_CD     LOC="P49" ;                 #
+NET LCD_WR     LOC="P53" ;                 #
+NET LCD_RSTB   LOC="P54" ;                 #
+NET LCD_D<0>   LOC="P57" ;                 #
+NET LCD_D<1>   LOC="P58" ;                 #
+NET LCD_D<2>   LOC="P60" ;                 #
+NET LCD_D<3>   LOC="P61" ;                 #
+NET LCD_D<4>   LOC="P62" ;                 #
+NET LCD_D<5>   LOC="P63" ;                 #
+NET LCD_D<6>   LOC="P65" ;                 #
+NET LCD_D<7>   LOC="P66" ;                 #
+##############################################################################

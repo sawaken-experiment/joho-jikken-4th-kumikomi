@@ -1,0 +1,618 @@
+Release 12.4 - xst M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: MieruEMB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MieruEMB.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MieruEMB"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : MieruEMB
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../rtl/minilcd.v" in library work
+Module <minilcd_con> compiled
+Module <minilcd_vram> compiled
+Compiling verilog file "../rtl/MieruEmb.v" in library work
+Module <minilcd_initmem> compiled
+Module <MieruEMB> compiled
+No errors in compilation
+Analysis of file <"MieruEMB.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MieruEMB> in library <work>.
+
+Analyzing hierarchy for module <clockgen> in library <work>.
+
+Analyzing hierarchy for module <resetgen> in library <work>.
+
+Analyzing hierarchy for module <minilcd_con> in library <work>.
+
+Analyzing hierarchy for module <minilcd_initmem> in library <work>.
+
+Analyzing hierarchy for module <minilcd_vram> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MieruEMB>.
+Module <MieruEMB> is correct for synthesis.
+ 
+Analyzing module <clockgen> in library <work>.
+Module <clockgen> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf> in unit <clockgen>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf> in unit <clockgen>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf> in unit <clockgen>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf> in unit <clockgen>.
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "CLKFX_DIVIDE =  20" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "CLKFX_MULTIPLY =  15" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "CLKIN_PERIOD =  10.000000" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <dcm> in unit <clockgen>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <dcm> in unit <clockgen>.
+Analyzing module <resetgen> in library <work>.
+Module <resetgen> is correct for synthesis.
+ 
+Analyzing module <minilcd_con> in library <work>.
+Module <minilcd_con> is correct for synthesis.
+ 
+Analyzing module <minilcd_initmem> in library <work>.
+Module <minilcd_initmem> is correct for synthesis.
+ 
+Analyzing module <minilcd_vram> in library <work>.
+Module <minilcd_vram> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <resetgen>.
+    Related source file is "../rtl/MieruEmb.v".
+    Found 8-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <resetgen> synthesized.
+
+
+Synthesizing Unit <minilcd_initmem>.
+    Related source file is "../rtl/minilcd.v".
+    Found 64x16-bit ROM for signal <DATA$mux0000> created at line 96.
+    Found 16-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <minilcd_initmem> synthesized.
+
+
+Synthesizing Unit <minilcd_vram>.
+    Related source file is "../rtl/minilcd.v".
+    Found 16384x4-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 4-bit register for signal <DOUT>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 D-type flip-flop(s).
+Unit <minilcd_vram> synthesized.
+
+
+Synthesizing Unit <clockgen>.
+    Related source file is "../rtl/MieruEmb.v".
+Unit <clockgen> synthesized.
+
+
+Synthesizing Unit <minilcd_con>.
+    Related source file is "../rtl/minilcd.v".
+    Found 8-bit register for signal <LCD_D>.
+    Found 1-bit register for signal <LCD_CS0>.
+    Found 1-bit register for signal <LCD_RSTB>.
+    Found 1-bit register for signal <LCD_CD>.
+    Found 15-bit register for signal <cmdcnt>.
+    Found 15-bit adder for signal <cmdcnt$share0000>.
+    Found 1-bit register for signal <init>.
+    Found 24-bit register for signal <waitcnt>.
+    Found 24-bit subtractor for signal <waitcnt$addsub0000> created at line 45.
+    Found 3-bit register for signal <writecnt>.
+    Found 3-bit subtractor for signal <writecnt$addsub0000> created at line 44.
+    Summary:
+	inferred  54 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <minilcd_con> synthesized.
+
+
+Synthesizing Unit <MieruEMB>.
+    Related source file is "../rtl/MieruEmb.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <mode> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <mode> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_0> for signal <mode>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 10                                             |
+    | Clock              | cnt<18>                   (rising_edge)        |
+    | Reset              | RST_X                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 23-bit up counter for signal <cnt>.
+    Found 3-bit register for signal <color>.
+    Found 7-bit register for signal <direct>.
+    Found 7-bit adder for signal <direct$sub0000>.
+    Found 7-bit register for signal <top>.
+    Found 7-bit adder for signal <top$share0000>.
+    Found 7-bit subtractor for signal <top$sub0000> created at line 52.
+    Found 7-bit register for signal <x>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <MieruEMB> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16384x4-bit dual-port RAM                             : 1
+# ROMs                                                 : 1
+ 64x16-bit ROM                                         : 1
+# Adders/Subtractors                                   : 6
+ 15-bit adder                                          : 1
+ 24-bit subtractor                                     : 1
+ 3-bit subtractor                                      : 1
+ 7-bit adder                                           : 2
+ 7-bit subtractor                                      : 1
+# Counters                                             : 2
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 14
+ 1-bit register                                        : 4
+ 15-bit register                                       : 1
+ 16-bit register                                       : 1
+ 24-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 1
+ 7-bit register                                        : 3
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <mode/FSM> on signal <mode[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
+
+Synthesizing (advanced) Unit <minilcd_initmem>.
+INFO:Xst:3044 - The ROM <Mrom_DATA_mux0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <DATA>.
+INFO:Xst:3039 - The RAM <Mrom_DATA_mux0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 16-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <minilcd_initmem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <minilcd_vram>.
+INFO:Xst:3040 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <DOUT>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16384-word x 4-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <WADDR>         |          |
+    |     diA            | connected to signal <DIN>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16384-word x 4-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <RADDR>         |          |
+    |     doB            | connected to signal <DOUT>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <minilcd_vram> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 2
+ 16384x4-bit dual-port block RAM                       : 1
+ 64x16-bit single-port block RAM                       : 1
+# Adders/Subtractors                                   : 6
+ 15-bit adder                                          : 1
+ 24-bit subtractor                                     : 1
+ 3-bit subtractor                                      : 1
+ 7-bit adder                                           : 2
+ 7-bit subtractor                                      : 1
+# Counters                                             : 2
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <cnt_19> of sequential type is unconnected in block <MieruEMB>.
+WARNING:Xst:2677 - Node <cnt_20> of sequential type is unconnected in block <MieruEMB>.
+WARNING:Xst:2677 - Node <cnt_21> of sequential type is unconnected in block <MieruEMB>.
+WARNING:Xst:2677 - Node <cnt_22> of sequential type is unconnected in block <MieruEMB>.
+INFO:Xst:1901 - Instance clkgen/dcm in unit MieruEMB of type DCM has been replaced by DCM_SP
+WARNING:Xst:1710 - FF/Latch <direct_0> (without init value) has a constant value of 1 in block <MieruEMB>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <color_0> in Unit <MieruEMB> is equivalent to the following 2 FFs/Latches, which will be removed : <color_1> <color_2> 
+
+Optimizing unit <MieruEMB> ...
+
+Optimizing unit <minilcd_con> ...
+INFO:Xst:2399 - RAMs <lcdcon/vram/Mram_mem3>, <lcdcon/vram/Mram_mem2> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <lcdcon/vram/Mram_mem3>, <lcdcon/vram/Mram_mem1> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MieruEMB, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 106
+ Flip-Flops                                            : 106
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MieruEMB.ngr
+Top Level Output File Name         : MieruEMB
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 347
+#      GND                         : 1
+#      INV                         : 37
+#      LUT1                        : 41
+#      LUT2                        : 50
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 22
+#      LUT3_D                      : 3
+#      LUT4                        : 29
+#      LUT4_D                      : 2
+#      MUXCY                       : 79
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 79
+# FlipFlops/Latches                : 106
+#      FDC                         : 22
+#      FDCE                        : 74
+#      FDE                         : 8
+#      FDP                         : 1
+#      FDPE                        : 1
+# RAMS                             : 3
+#      RAMB16_S18                  : 1
+#      RAMB16_S1_S1                : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 20
+#      IBUF                        : 3
+#      IBUFG                       : 1
+#      OBUF                        : 16
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                       96  out of   4656     2%  
+ Number of Slice Flip Flops:            106  out of   9312     1%  
+ Number of 4 input LUTs:                186  out of   9312     1%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of     66    30%  
+ Number of BRAMs:                         3  out of     20    15%  
+ Number of GCLKs:                         3  out of     24    12%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+cnt_181                            | BUFG                   | 25    |
+CLK                                | clkgen/dcm:CLKFX       | 84    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------+------------------------+-------+
+Control Signal                      | Buffer(FF name)        | Load  |
+------------------------------------+------------------------+-------+
+RST_X_inv(lcdcon/RST_X_inv1_INV_0:O)| NONE(cnt_0)            | 90    |
+_and0000_inv(_and0000_inv1:O)       | NONE(rstgen/cnt_0)     | 8     |
+------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.634ns (Maximum Frequency: 177.494MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.620ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'cnt_181'
+  Clock period: 5.634ns (frequency: 177.494MHz)
+  Total number of paths / destination ports: 418 / 44
+-------------------------------------------------------------------------
+Delay:               5.634ns (Levels of Logic = 3)
+  Source:            top_3 (FF)
+  Destination:       top_0 (FF)
+  Source Clock:      cnt_181 rising
+  Destination Clock: cnt_181 rising
+
+  Data Path: top_3 to top_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.762  top_3 (top_3)
+     LUT4:I0->O            2   0.704   0.482  direct_or000064_SW0 (N7)
+     LUT4:I2->O            1   0.704   0.424  direct_or000064 (direct_or0000)
+     LUT4:I3->O            7   0.704   0.708  top_not00011 (top_not0001)
+     FDCE:CE                   0.555          top_0
+    ----------------------------------------
+    Total                      5.634ns (3.258ns logic, 2.376ns route)
+                                       (57.8% logic, 42.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.162ns (frequency: 193.715MHz)
+  Total number of paths / destination ports: 3270 / 177
+-------------------------------------------------------------------------
+Delay:               6.883ns (Levels of Logic = 8)
+  Source:            lcdcon/waitcnt_8 (FF)
+  Destination:       lcdcon/waitcnt_23 (FF)
+  Source Clock:      CLK rising 0.8X
+  Destination Clock: CLK rising 0.8X
+
+  Data Path: lcdcon/waitcnt_8 to lcdcon/waitcnt_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  lcdcon/waitcnt_8 (lcdcon/waitcnt_8)
+     LUT4:I0->O            1   0.704   0.000  lcdcon/waitcnt_cmp_eq0000_wg_lut<0> (lcdcon/waitcnt_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  lcdcon/waitcnt_cmp_eq0000_wg_cy<0> (lcdcon/waitcnt_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  lcdcon/waitcnt_cmp_eq0000_wg_cy<1> (lcdcon/waitcnt_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  lcdcon/waitcnt_cmp_eq0000_wg_cy<2> (lcdcon/waitcnt_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  lcdcon/waitcnt_cmp_eq0000_wg_cy<3> (lcdcon/waitcnt_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  lcdcon/waitcnt_cmp_eq0000_wg_cy<4> (lcdcon/waitcnt_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          28   0.459   1.296  lcdcon/waitcnt_cmp_eq0000_wg_cy<5> (lcdcon/waitcnt_cmp_eq0000)
+     LUT3:I2->O           24   0.704   1.252  lcdcon/waitcnt_not00021 (lcdcon/waitcnt_not0002)
+     FDCE:CE                   0.555          lcdcon/waitcnt_0
+    ----------------------------------------
+    Total                      6.883ns (3.713ns logic, 3.170ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              5.620ns (Levels of Logic = 2)
+  Source:            lcdcon/writecnt_2 (FF)
+  Destination:       LCD_WR (PAD)
+  Source Clock:      CLK rising 0.8X
+
+  Data Path: lcdcon/writecnt_2 to LCD_WR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.591   0.633  lcdcon/writecnt_2 (lcdcon/writecnt_2)
+     INV:I->O              1   0.704   0.420  lcdcon/LCD_WR1_INV_0 (LCD_WR_OBUF)
+     OBUF:I->O                 3.272          LCD_WR_OBUF (LCD_WR)
+    ----------------------------------------
+    Total                      5.620ns (4.567ns logic, 1.053ns route)
+                                       (81.3% logic, 18.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.88 secs
+ 
+--> 
+
+Total memory usage is 202260 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+
